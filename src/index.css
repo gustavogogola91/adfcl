@@ -8,6 +8,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --light-green: #A9D047;
+  --dark-green: #4a755a;
+
+}
+
+@theme inline {
+  --color-light-green: var(--light-green);
+  --color-dark-green: var(--dark-green);
 }
 
 

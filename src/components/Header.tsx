@@ -4,6 +4,8 @@ import logo from "../assets/ADFCL-Logo.jpg"
 export default function Header() {
     const [option, SetOption] = useState([]);
 
+    
+
     // A fazer:
     // - Terminar Gradiente
     // - Arrumar Design
