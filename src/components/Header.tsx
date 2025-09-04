@@ -25,16 +25,16 @@ export default function Header() {
 
             <ul className="text-[19px] font-bold flex items-center gap-6">
                 <li>
-                    <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-[#A9D04730] hover:text-[#A9D047]">Home</a>
+                    <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Home</a>
                 </li>
                 <li>
-                    <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-[#A9D04730] hover:text-[#A9D047]">Sobre Nós</a>
+                    <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Sobre Nós</a>
                 </li>
                 <li>
-                    <a href="#" className="text-black p-2  transition  rounded-[5px] hover:bg-[#A9D04730] hover:text-[#A9D047]">Projetos</a>
+                    <a href="#" className="text-black p-2  transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Projetos</a>
                 </li>
                 <li>
-                    <a href="#" className="text-[22px] text-white bg-[#4a755a] transition rounded-[5px] px-4 py-2 p-2 hover:bg-[#A9D04730] hover:text-[#4a755a]">COMO AJUDAR</a>
+                    <a href="#" className="text-[22px] text-white bg-dark-green transition rounded-[5px] px-4 py-2 p-2 hover:bg-dark-green-alpha hover:text-dark-green">COMO AJUDAR</a>
                 </li>
             </ul>
 

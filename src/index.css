@@ -12,11 +12,14 @@
   --light-green: #A9D047;
   --dark-green: #4a755a;
 
+  --dark-green-alpha: #A9D04730;
+
 }
 
 @theme inline {
   --color-light-green: var(--light-green);
   --color-dark-green: var(--dark-green);
+  --color-dark-green-alpha: var(--dark-green-alpha)
 }
 
 
