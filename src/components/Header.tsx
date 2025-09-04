@@ -13,8 +13,8 @@ export default function Header() {
 
     return (
 
-        <header className="flex flex-row px-20 py-2 w-full justify-between items-center text-black bg-linear-to-b from-[#4A755A63] to-white">
-            <div className="flex flex-row gap-2 items-center">
+        <header className="flex flex-row px-20 py-2 w-full h-[160px] justify-between items-start pt-[25px] text-black bg-linear-to-b from-[#4A755A63] to-white">
+            <div className="flex flex-row gap-2 justify-center items-center">
                 <img src={logo} alt="LOGO ADFCL"
                     className="rounded-full size-[60px]" />
                 <div className="flex flex-col leading-none">
@@ -23,7 +23,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <ul className="text-[19px] font-bold flex items-center gap-6">
+            <ul className="text-[18px] h-1/2 font-bold flex justify-center items-center gap-6">
                 <li>
                     <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Home</a>
                 </li>
@@ -34,7 +34,7 @@ export default function Header() {
                     <a href="#" className="text-black p-2  transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Projetos</a>
                 </li>
                 <li>
-                    <a href="#" className="text-[22px] text-white bg-dark-green transition rounded-[5px] px-4 py-2 p-2 hover:bg-dark-green-alpha hover:text-dark-green">COMO AJUDAR</a>
+                    <a href="#" className="text-[20px] text-white bg-dark-green transition rounded-[5px] px-4 py-2 p-2 hover:bg-dark-green-alpha hover:text-dark-green">COMO AJUDAR</a>
                 </li>
             </ul>
 
