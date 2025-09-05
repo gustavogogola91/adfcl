@@ -13,8 +13,8 @@ export default function Header() {
 
     return (
 
-        <header className="flex flex-row px-20 py-2 w-full h-[160px] justify-between items-start pt-[25px] text-black bg-linear-to-b from-[#4A755A63] to-white">
-            <div className="flex flex-row gap-2 justify-center items-center">
+        <header className="flex flex-col md:flex-row  md:px-20 py-2 w-full md:h-[160px] justify-between items-start pt-[25px] text-black bg-linear-to-b from-[#4A755A63] to-white">
+            <div className="flex flex-row gap-2 mb-4 justify-center items-center">
                 <img src={logo} alt="LOGO ADFCL"
                     className="rounded-full size-[60px]" />
                 <div className="flex flex-col leading-none">
@@ -23,7 +23,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <ul className="text-[18px] h-1/2 font-bold flex justify-center items-center gap-6">
+            <ul className="text-[18px] md:h-1/2 w-full flex-col md:flex-row font-bold flex justify-center items-center gap-3 md:gap-6">
                 <li>
                     <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Home</a>
                 </li>
