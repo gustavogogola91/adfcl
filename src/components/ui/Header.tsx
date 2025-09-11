@@ -1,5 +1,5 @@
 import { useState } from "react"
-import logo from "../assets/ADFCL-Logo.jpg"
+import logo from "../../assets/ADFCL-Logo.jpg"
 
 export default function Header() {
     const [option, SetOption] = useState([]);
@@ -25,7 +25,7 @@ export default function Header() {
 
             <ul className="text-[18px] md:h-1/2 w-full flex-col md:flex-row font-bold flex justify-center items-center gap-3 md:gap-6">
                 <li>
-                    <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Home</a>
+                    <a href="/" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Home</a>
                 </li>
                 <li>
                     <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Sobre Nós</a>
@@ -34,7 +34,7 @@ export default function Header() {
                     <a href="#" className="text-black p-2  transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Projetos</a>
                 </li>
                 <li>
-                    <a href="#" className="text-[20px] text-white bg-dark-green transition rounded-[5px] px-4 py-2 p-2 hover:bg-dark-green-alpha hover:text-dark-green">COMO AJUDAR</a>
+                    <a href="/contato" className="text-[20px] text-white bg-dark-green transition rounded-[5px] px-4 py-2 p-2 hover:bg-dark-green-alpha hover:text-dark-green">COMO AJUDAR</a>
                 </li>
             </ul>
 
