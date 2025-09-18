@@ -3,17 +3,18 @@ import imgFachada from "../assets/imgFachada.png";
 export default function Home() {
   return (
     <>
-    <section className="flex justify-center gap-10">
+      <section className="flex justify-center gap-10">
         <div className="flex flex-col justify-center items-center">
-      <h1 className="font-bold">BEM VINDO A ASSOCIAÇÃO</h1>
-    <p className="w-1/2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, diam in egestas tristique, risus augue iaculis tellus, a vestibulum nisi libero at lectus. Proin id lectus eget justo aliquet tempus. Ut interdum porttitor orci, vitae commodo neque suscipit vel. Nunc eget pellentesque nulla. In id blandit nisi. Nullam non suscipit lacus. Praesent in ultrices elit. Vestibulum tortor nulla, porttitor sollicitudin augue vitae, egestas lobortis felis.</p>
+          <h1 className="font-bold uppercase text-[48px] text-[#4A755A]">Bem-vindo ao nosso site!</h1>
+          <p className="w-1/2 text-[#1E1E1E] text-justify" >Aqui você encontrará espaço para explorar conteúdos, ideias e novidades.  Este é apenas um texto de demonstração para testar o estilo, o layout e as fontes da página.
+Sinta-se à vontade para navegar, ajustar e experimentar.</p>
 
         </div>
-    
 
-        <img src={imgFachada} alt="Imagem" 
-        className="rounded-xl w-[700px] h-[500px]"/>
-    </section>
+
+        <img src={imgFachada} alt="Imagem"
+          className="rounded-xl w-[700px] h-[500px]" />
+      </section>
     </>
   );
 }

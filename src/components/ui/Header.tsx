@@ -19,11 +19,11 @@ export default function Header() {
                     className="rounded-full size-[60px]" />
                 <div className="flex flex-col leading-none">
                     <h3 className="text-[30px] font-bold text-[#4a755a]">A.D.F.C.L</h3>
-                    <p className="text-[12px] font-bold">Associação de Deficientes Fisicos de Campo Largo</p>
+                    <p className="text-[12px] font-extrabold">Associação de Deficientes Fisicos de Campo Largo</p>
                 </div>
             </div>
 
-            <ul className="text-[18px] md:h-1/2 w-full flex-col md:flex-row font-bold flex justify-center items-center gap-3 md:gap-6">
+            <ul className="text-[18px] md:h-1/2 w-full flex-col md:flex-row font-bold flex justify-center md:justify-end items-center md: gap-3 md:gap-6">
                 <li>
                     <a href="/" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Home</a>
                 </li>
