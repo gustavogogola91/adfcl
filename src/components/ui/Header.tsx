@@ -28,7 +28,7 @@ export default function Header() {
                     <a href="/" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Home</a>
                 </li>
                 <li>
-                    <a href="#" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Sobre Nós</a>
+                    <a href="/sobre" className="text-black p-2 transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Sobre Nós</a>
                 </li>
                 <li>
                     <a href="#" className="text-black p-2  transition  rounded-[5px] hover:bg-dark-green-alpha hover:text-light-green">Projetos</a>

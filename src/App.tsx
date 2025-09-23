@@ -3,6 +3,7 @@ import './App.css'
 import Contato from './components/Contato'
 import Header from './components/ui/Header';
 import Home from './components/Home';
+import Sobre from './components/Sobre';
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contato" element={<Contato />} />
-            {/* <Route path="/sobre" element={<Sobre />} /> */}
+            <Route path="/sobre" element={<Sobre />} />
           </Routes>
         </main>
       </div>
