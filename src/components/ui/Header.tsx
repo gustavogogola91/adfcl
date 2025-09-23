@@ -1,10 +1,9 @@
 import { useState } from "react"
 import logo from "../../assets/ADFCL-Logo.jpg"
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Header() {
     const [option, SetOption] = useState([]);
-
-    
 
     // A fazer:
     // - Terminar Gradiente
@@ -37,6 +36,8 @@ export default function Header() {
                     <a href="/contato" className="text-[20px] text-white bg-dark-green transition rounded-[5px] px-4 py-2 p-2 hover:bg-dark-green-alpha hover:text-dark-green">COMO AJUDAR</a>
                 </li>
             </ul>
+
+        <ThemeToggle/>
 
         </header>
     )
