@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
 
-        <header className="flex flex-col md:flex-row  md:px-20 py-2 w-full md:h-[160px] justify-between items-start pt-[25px] text-black bg-linear-to-b from-[#4A755A63] to-white">
+        <header className="flex flex-col md:flex-row  md:px-20 py-2 w-full md:h-[160px] justify-between items-start pt-[25px] text-black">
             <div className="flex flex-row gap-2 mb-4 justify-center items-center">
                 <img src={logo} alt="LOGO ADFCL"
                     className="rounded-full size-[60px]" />

@@ -10,16 +10,14 @@ const App = () => {
 
     <ThemeProvider>
       <Router>
-          <div style={{ fontFamily: 'Arial, sans-serif' }}>
             <Header />
-            <main style={{ padding: '2rem' }}>
+            <main>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contato" element={<Contato />} />
                 {/* <Route path="/sobre" element={<Sobre />} /> */}
               </Routes>
             </main>
-          </div>
         </Router>
 
     </ThemeProvider>
