@@ -21,7 +21,6 @@ const App = () => {
         </Router>
 
     </ThemeProvider>
-    
   );
 };
 
