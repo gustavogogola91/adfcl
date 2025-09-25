@@ -1,4 +1,6 @@
 import imgFachada from "../assets/Fachada.jpeg";
+import Depoimentos from "./Depoimentos";
+import Contato from "./Contato";
 
 export default function Home() {
   return (
@@ -14,9 +16,8 @@ export default function Home() {
           className="w-full h-full object-cover" />
       </section>
       <main>
-
-
-
+        <Depoimentos />
+        <Contato/>
       </main>
     </>
   );
