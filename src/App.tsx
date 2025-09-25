@@ -3,22 +3,24 @@ import './App.css'
 import Contato from './components/Contato'
 import Header from './components/ui/Header';
 import Home from './components/Home';
-import Depoimentos from './components/Depoimentos';
+import { ThemeProvider } from './hooks/useTheme';
 
 const App = () => {
   return (
-    <Router>
-      <div style={{ fontFamily: 'Arial, sans-serif' }}>
-        <Header />
-        <main style={{ padding: '2rem' }}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contato" element={<Contato />} />
-            <Route path="/sobre" element={<Depoimentos />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+
+    <ThemeProvider>
+      <Router>
+            <Header />
+            <main>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/contato" element={<Contato />} />
+                {/* <Route path="/sobre" element={<Sobre />} /> */}
+              </Routes>
+            </main>
+        </Router>
+
+    </ThemeProvider>
   );
 };
 

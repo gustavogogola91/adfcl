@@ -16,13 +16,56 @@
 
 }
 
+.high-contrast {
+  --bg-primary: #000000;
+  --bg-secondary: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #ffff00;
+  --text-accent: #ffff00;
+  --border-color: #ffffff;
+  --light-green: #ffff00;
+  --dark-green: #00ffff;
+}
+
 @theme inline {
   --color-light-green: var(--light-green);
   --color-dark-green: var(--dark-green);
-  --color-dark-green-alpha: var(--dark-green-alpha)
+  --color-dark-green-alpha: var(--dark-green-alpha);
+
+    /* Variáveis para os temas */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-accent: var(--text-accent);
+  --color-border: var(--border-color);
 }
 
 
 body {
   margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.high-contrast {
+  color-scheme: only light;
+}
+
+.high-contrast * {
+  border-color: var(--border-color) !important;
+}
+
+.high-contrast img {
+  filter: contrast(1.2) brightness(1.1);
+}
+
+.high-contrast h1{
+  color: var(--text-secondary);
+}
+
+.high-contrast a {
+  color: var(--text-accent);
 }
