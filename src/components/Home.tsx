@@ -1,6 +1,7 @@
 import imgFachada from "../assets/Fachada.jpeg";
 import Depoimentos from "./Depoimentos";
 import Contato from "./Contato";
+import Projetos from "./Projetos";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
       </section>
       <main>
         <Depoimentos />
-        <Contato/>
+        <Projetos />
+        <Contato />
       </main>
     </>
   );
