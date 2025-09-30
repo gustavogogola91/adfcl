@@ -1,45 +1,49 @@
-import Projetos from "./Projetos";
-
 export default function Depoimentos() {
-
   const depoimentos = [
     {
       id: 1,
       titulo: "titulo",
-      depoimento: "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
+      depoimento:
+        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
       foto: "./perfil.png",
       name: "Nome",
-      idade: "Idade"
+      idade: "Idade",
     },
     {
       id: 2,
       titulo: "titulo",
-      depoimento: "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
+      depoimento:
+        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
       foto: "./perfil.png",
       nome: "Nome",
-      idade: "Idade"
+      idade: "Idade",
     },
     {
       id: 3,
       titulo: "titulo",
-      depoimento: "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
+      depoimento:
+        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
       foto: "./perfil.png",
       name: "Nome",
-      idade: "Idade"
-    }
-  ]
+      idade: "Idade",
+    },
+  ];
 
   return (
     <section className="w-full mt-8">
       <h2 className="font-bold uppercase text-2xl text-[#4A755A] text-center ">
         Depoimentos
       </h2>
-      <h3 className="text-center mt-4">Descubra como ajudamos pessoas a melhorar sua vida</h3>
+      <h3 className="text-center mt-4">
+        Descubra como ajudamos pessoas a melhorar sua vida
+      </h3>
       <div className="flex flex-row justify-center gap-8 mt-4">
         {depoimentos.map((depoimento) => (
           <div className="bg-[#f3f1f1] shadow-lg w-[300px] h-full p-4 flex flex-col  min-h-[350px]">
             <div className="font-bold italic">{depoimento.titulo}</div>
-            <div className="italic mt-8 text-[0.8rem] break-words">{depoimento.depoimento}</div>
+            <div className="italic mt-8 text-[0.8rem] break-words">
+              {depoimento.depoimento}
+            </div>
             <div className="flex flex-row w-full p-1 justify-around mt-8 bottom-0">
               <div>
                 <img
@@ -54,8 +58,7 @@ export default function Depoimentos() {
               </div>
             </div>
           </div>
-        ))
-        }
+        ))}
       </div>
     </section>
   );
