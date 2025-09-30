@@ -35,7 +35,7 @@ export default function Projetos() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
         {projetos.map((projeto) => (
-          <div className="flex flex-col shadow-lg items-center hover:scale-105 duration-200 bg-dark-green min-h-[350px]">
+          <div className="flex flex-col shadow-lg items-center hover:scale-105 duration-200 bg-dark-green min-h-[350px]" key={projeto.id}>
             <img
               src={projeto.imagem}
               alt={projeto.titulo}

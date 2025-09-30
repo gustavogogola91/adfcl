@@ -37,9 +37,9 @@ export default function Depoimentos() {
       <h3 className="text-center mt-4">
         Descubra como ajudamos pessoas a melhorar sua vida
       </h3>
-      <div className="flex flex-row justify-center gap-8 mt-4">
+      <div className="flex flex-col md:flex-row md:justify-center gap-8 mt-4">
         {depoimentos.map((depoimento) => (
-          <div className="bg-[#f3f1f1] shadow-lg w-[300px] h-full p-4 flex flex-col  min-h-[350px]">
+          <div className="bg-[#f3f1f1] shadow-lg w-[300px] mx-auto md:mx-0 md:h-full p-4 flex flex-col min-h-[350px]" key={depoimento.id}>
             <div className="font-bold italic">{depoimento.titulo}</div>
             <div className="italic mt-8 text-[0.8rem] break-words">
               {depoimento.depoimento}
