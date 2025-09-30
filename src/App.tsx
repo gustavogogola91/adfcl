@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contato from './components/Contato'
 import Header from './components/ui/Header';
 import Home from './components/Home';
@@ -16,7 +15,6 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/contato" element={<Contato />} />
                 <Route path="/projetos" element={<Projetos />} />
-                {/* <Route path="/sobre" element={<Sobre />} /> */}
               </Routes>
             </main>
         </Router>

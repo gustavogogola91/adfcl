@@ -1,6 +1,6 @@
-import projetoEsporte from "../assets/projetos/projetoEsportivo.jpg";
-import projetoEquoterapia from "../assets/projetos/projetoEquoterapia.png";
-import projetoBaile from "../assets/projetos/projetoBaile.png";
+import projetoEsporte from "../assets/projetos/projetoEsportivo.avif";
+import projetoEquoterapia from "../assets/projetos/projetoEquoterapia.avif";
+import projetoBaile from "../assets/projetos/projetoBaile.avif";
 
 
 export default function Projetos() {
