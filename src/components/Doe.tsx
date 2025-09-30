@@ -5,7 +5,7 @@ export default function Doe() {
         <h2 className="text-2xl text-white uppercase font-bold">Doe</h2>
         <h3>Nos auxilie em nossa missão</h3>
         <div className="flex flex-col gap-4 mt-4">
-          <img src="/qrcode.png" alt="Qrcode" className="w-50 m-auto" />
+          <img src="src\assets\Icons\qrcode.png" alt="Qrcode" className="w-50 m-auto" />
           <p>Chave pix: 00.000.000/0000-00</p>
         </div>
       </div>
