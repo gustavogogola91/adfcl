@@ -6,7 +6,7 @@ import Projetos from "./Projetos";
 export default function Home() {
   return (
     <>
-      <section id="main" className="flex justify-center bg-dark-green gap-10 h-[500px] ">
+      <section id="main" className="flex flex-col md:flex-row justify-center bg-dark-green gap-10 h-[500px] ">
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold uppercase text-[48px] text-white">
             Bem-vindo ao nosso site!
@@ -21,7 +21,7 @@ export default function Home() {
         <img
           src={imgFachada}
           alt="Imagem"
-          className="w-full h-full object-cover"
+          className="md:w-full md:h-full object-cover"
         />
       </section>
       <main>

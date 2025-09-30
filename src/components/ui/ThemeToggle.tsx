@@ -8,7 +8,7 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-black"
+      className="hidden p-2 h-14 w-14 rounded-lg bg-black"
       aria-label={`Mudar tema. Tema atual: ${theme}`}
     >
       {theme === 'light' && <CircleX size={22} color="#ffffff" strokeWidth={1} />}
