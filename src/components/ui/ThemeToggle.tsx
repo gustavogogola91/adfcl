@@ -1,4 +1,5 @@
 
+import { CircleCheck, CircleX } from 'lucide-react';
 import { useTheme } from '../../hooks/useTheme';
 
 export const ThemeToggle = () => {
@@ -7,11 +8,11 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 highcontrast:bg-black highcontrast:border-2 highcontrast:border-white"
+      className="p-2 rounded-lg bg-black"
       aria-label={`Mudar tema. Tema atual: ${theme}`}
     >
-      {theme === 'light' && '☀️'}
-      {theme === 'high-contrast' && '⚫'}
+      {theme === 'light' && <CircleX size={22} color="#ffffff" strokeWidth={1} />}
+      {theme === 'high-contrast' && <CircleCheck size={22} color="#ffffff" strokeWidth={1} />}
     </button>
   );
 };
