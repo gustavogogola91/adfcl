@@ -10,7 +10,7 @@ export default function Contato() {
             target="_blank"
             className="flex flex-row gap-4 items-center w-fit border-2 p-4 text-white bg-dark-green rounded-[5px] hover:bg-[#3d5f4a]"
           >
-            <img src="./instagram.png" alt="Logo Instagram" className="w-10" />{" "}
+            <img src="src\assets\Icons\instagram.png" alt="Logo Instagram" className="w-10" />{" "}
             Instagram
           </a>
         </li>
@@ -20,7 +20,7 @@ export default function Contato() {
             target="_blank"
             className="flex flex-row gap-4 items-center w-fit border-2 p-4 text-white bg-dark-green rounded-[5px] hover:bg-[#3d5f4a]"
           >
-            <img src="./facebook.png" alt="Logo Facebook" className="w-10" />{" "}
+            <img src="src\assets\Icons\facebook.png" alt="Logo Facebook" className="w-10" />{" "}
             Facebook
           </a>
         </li>
