@@ -19,12 +19,15 @@ export default function Doe() {
           Como Doar sua nota fiscal?
         </h3>
         <p>Assita o vídeo abaixo e descubra como fazer sua doação.</p>
+
+        <div className="relative w-full h-0 pb-[56.25%]">
         <iframe
           className="m-auto md:w-[560px] md:h-[315px]"
           src="https://www.youtube.com/embed/1D-V7rsIwk8?si=p8xXEQ_jSOtY53NQ"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
         />
+        </div>
       </div>
     </section>
   );

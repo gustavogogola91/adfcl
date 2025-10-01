@@ -34,6 +34,7 @@ export default function Depoimentos() {
       <h2 className="font-bold uppercase text-2xl text-[#4A755A] text-center ">
         Depoimentos
       </h2>
+
       <h3 className="text-center mt-4">
         Descubra como ajudamos pessoas a melhorar sua vida
       </h3>
