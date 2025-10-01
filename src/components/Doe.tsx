@@ -15,14 +15,16 @@ export default function Doe() {
 
         <h3 className="text-2xl text-[#4A755A] uppercase">Como Doar sua nota fiscal?</h3>
         <p>Assita o vídeo abaixo e descubra como fazer sua doação.</p>
-        <iframe
-         className="m-auto"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/1D-V7rsIwk8?si=p8xXEQ_jSOtY53NQ"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-        />
+        <div className="relative w-full h-0 pb-[56.25%]">
+          <iframe
+          className="absolute top-0 left-0 w-full h-full"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1D-V7rsIwk8?si=p8xXEQ_jSOtY53NQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+          />
+        </div>
       </div>
     </section>
   );

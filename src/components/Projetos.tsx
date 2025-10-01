@@ -33,7 +33,7 @@ export default function Projetos() {
       <h2 className="font-bold uppercase text-2xl text-[#4A755A] text-center">Projetos</h2>
       <h3 className="text-center mt-4" >Conheça alguns projetos que já realizamos</h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 px-2">
         {projetos.map((projeto) => (
           <div className="flex flex-col shadow-lg items-center hover:scale-105 duration-200 bg-dark-green min-h-[350px]">
             <img
