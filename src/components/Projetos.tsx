@@ -1,6 +1,6 @@
-import projetoEsporte from "../assets/projetos/projetoEsportivo.jpg";
-import projetoEquoterapia from "../assets/projetos/projetoEquoterapia.png";
-import projetoBaile from "../assets/projetos/projetoBaile.png";
+import projetoEsporte from "../assets/projetos/projetoEsportivo.avif";
+import projetoEquoterapia from "../assets/projetos/projetoEquoterapia.avif";
+import projetoBaile from "../assets/projetos/projetoBaile.avif";
 
 
 export default function Projetos() {
@@ -35,7 +35,7 @@ export default function Projetos() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 px-2">
         {projetos.map((projeto) => (
-          <div className="flex flex-col shadow-lg items-center hover:scale-105 duration-200 bg-dark-green min-h-[350px]">
+          <div className="flex flex-col shadow-lg items-center hover:scale-105 duration-200 bg-dark-green min-h-[350px]" key={projeto.id}>
             <img
               src={projeto.imagem}
               alt={projeto.titulo}

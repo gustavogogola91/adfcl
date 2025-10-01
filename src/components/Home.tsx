@@ -1,4 +1,4 @@
-import imgFachada from "../assets/Fachada.jpeg";
+import imgFachada from "/Fachada.jpeg";
 import Depoimentos from "./Depoimentos";
 import Contato from "./Contato";
 import Projetos from "./Projetos";
@@ -22,6 +22,7 @@ export default function Home() {
           src={imgFachada}
           alt="Imagem"
           className="md:w-full md:h-full object-cover"
+          fetchPriority="high"
         />
       </section>
       <main>
