@@ -86,3 +86,24 @@ header button.high-contrast{
 .high-contrast a {
   color: var(--text-accent);
 }
+.high-contrast h4{
+  color: var(--text-secondary);
+}
+
+.high-contrast button:hover{
+  background-color: yellow;
+  color: black;
+}
+
+#depoimento {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+#projeto {
+  border: 1px solid var(--border-color);
+  
+}
+#projeto p{
+  color: black;
+}
