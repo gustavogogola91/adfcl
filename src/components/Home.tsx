@@ -10,7 +10,7 @@ export default function Home() {
       <div className="pt-[80px] md:pt-[100px]">
         <section
           id="main"
-          className="relative flex flex-col md:flex-row justify-center items-center bg-[#4a755a] gap-0 md:gap-10 min-h-[400px] md:h-[500px] max-w-[1400px] mx-auto overflow-hidden"
+          className="relative flex flex-col md:flex-row justify-center items-center bg-[#4a755a] gap-0 md:gap-10 min-h-[400px] md:h-[500px] mx-auto overflow-hidden"
         >
           {/* MOBILE: Imagem de fundo com texto sobreposto */}
           <div className="relative w-full h-[500px] md:hidden">
@@ -21,7 +21,7 @@ export default function Home() {
               fetchPriority="high"
             />
             {/* Overlay escuro para melhorar legibilidade */}
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/70"></div>
             
             {/* Texto sobreposto */}
             <div className="absolute inset-0 flex flex-col justify-center items-center px-6 text-center z-10">
@@ -57,7 +57,7 @@ export default function Home() {
           />
         </section>
 
-        <main className="max-w-[1400px] mx-auto px-4">
+        <main className="mx-auto px-4">
           <div id="depoimentos">
             <Depoimentos />
           </div>

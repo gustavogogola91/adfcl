@@ -100,19 +100,19 @@ export default function Header() {
       {menuOpen && (
         <div className="flex flex-col md:hidden bg-[#4a755a] text-white w-full">
           <button
-            className="p-3 border-b border-white/20 hover:bg-[#3d5f4a]"
+            className="p-3 border-b border-white/20 hover:bg-[#3d5f4a] text-white md:text-black"
             onClick={() => scrollToSection("depoimentos")}
           >
             Depoimentos
           </button>
           <button
-            className="p-3 border-b border-white/20 hover:bg-[#3d5f4a]"
+            className="p-3 border-b border-white/20 hover:bg-[#3d5f4a] text-white md:text-black"
             onClick={() => scrollToSection("projetos")}
           >
             Projetos
           </button>
           <button
-            className="p-3 hover:bg-[#3d5f4a]"
+            className="p-3 hover:bg-[#3d5f4a] text-white md:text-black"
             onClick={() => scrollToSection("contato")}
           >
             Contato
