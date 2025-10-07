@@ -1,43 +1,50 @@
+import projetoEsporte from "../assets/projetos/projetoEsportivo.avif";
+import projetoEquoterapia from "../assets/projetos/projetoEquoterapia.avif";
+import projetoBaile from "../assets/projetos/projetoBaile.avif";
+
+
 export default function Projetos() {
   const projetos = [
     {
       id: 1,
-      titulo: "Projeto Esportivo 2022",
+      titulo: "Projeto Esportivo",
       descricao: "Iniciativa voltada para incentivar a prática do esporte entre os jovens.",
-      imagem: "/projetos/esporte2022.jpg",
+      imagem: projetoEsporte,
+      imageSpotlight: "center",
     },
     {
       id: 2,
-      titulo: "Campanha Solidária 2023",
-      descricao: "Arrecadação de alimentos e roupas para famílias em situação de vulnerabilidade.",
-      imagem: "/",
+      titulo: "Equoterapia",
+      descricao: "Recurso terapêutico que utiliza o cavalo dentro de uma abordagem interdisciplinar nas áres da saúde, educação e equitação.",
+      imagem: projetoEquoterapia,
+      imageSpotlight: "top",
     },
     {
       id: 3,
-      titulo: "Oficina Cultural",
-      descricao: "Oficinas de música, teatro e artes visuais para a comunidade.",
-      imagem: "/",
+      titulo: "Eventos e Bailes",
+      descricao: "Tardes de dança e muita alegria!!!",
+      imagem: projetoBaile,
+      imageSpotlight: "center",
     },
   ];
 
   return (
     <section className="w-[80%] md:w-[90%] flex flex-col gap-8 m-auto text-center mt-4">
-      <h2 className="text-2xl">Projetos</h2>
-      <h3>Conheça alguns projetos que já realizamos</h3>
+      <h2 className="font-bold uppercase text-2xl text-[#4A755A] text-center">Projetos</h2>
+      <h3 className="text-center mt-4" >Conheça alguns projetos que já realizamos</h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 px-2">
         {projetos.map((projeto) => (
-          <div
-            key={projeto.id}
-            className="flex flex-col gap-4 items-center bg-white border shadow-lg rounded-xl p-4 hover:scale-105 duration-200"
-          >
+          <div className="flex flex-col shadow-lg items-center hover:scale-105 duration-200 bg-dark-green min-h-[350px]" key={projeto.id} id="projeto">
             <img
               src={projeto.imagem}
               alt={projeto.titulo}
-              className="w-full h-48 object-cover rounded-lg"
+              className={`w-full object-cover h-[280px] object-${projeto.imageSpotlight}`}
             />
-            <h4 className="text-lg font-bold text-dark-green">{projeto.titulo}</h4>
-            <p className="text-sm text-justify">{projeto.descricao}</p>
+            <div className="p-4">
+              <h4 className="text-[24px] text-white font-bold mb-4">{projeto.titulo}</h4>
+              <p className="text-sm text-justify text-white">{projeto.descricao}</p>
+            </div>
           </div>
         ))}
       </div>
