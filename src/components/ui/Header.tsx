@@ -78,7 +78,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="hidden md:block">
+        <div className="md:block">
           <ThemeToggle />
         </div>
 

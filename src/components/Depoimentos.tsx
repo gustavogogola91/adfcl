@@ -42,7 +42,7 @@ export default function Depoimentos() {
         {depoimentos.map((depoimento) => (
           <div className="bg-[#f3f1f1] shadow-lg w-[300px] mx-auto md:mx-0 md:h-full p-4 flex flex-col min-h-[350px]" key={depoimento.id} id="depoimento">
             <div className="font-bold italic">{depoimento.titulo}</div>
-            <div className="italic mt-8 text-[0.8rem] break-words">
+            <div className="italic mt-8 text-[0.8rem] break-words highcontrast:text-xl">
               {depoimento.depoimento}
             </div>
             <div className="flex flex-row w-full p-1 justify-around mt-8 bottom-0">

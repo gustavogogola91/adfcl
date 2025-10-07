@@ -17,14 +17,15 @@
 }
 
 .high-contrast {
-  --bg-primary: #000000;
-  --bg-secondary: #111111;
+  --bg-primary: #111111;
+  --bg-secondary: #404040;
+  --gray: #A6A6A6;
+  --hyperlinks: #75E9FC;
   --text-primary: #ffffff;
   --text-secondary: #ffff00;
   --text-accent: #ffff00;
   --border-color: #ffffff;
   --light-green: #ffff00;
-  --dark-green: #00ffff;
 }
 
 @theme inline {
@@ -39,6 +40,7 @@
   --color-text-secondary: var(--text-secondary);
   --color-text-accent: var(--text-accent);
   --color-border: var(--border-color);
+  --color-hyperlinks: var(--hyperlinks);
 }
 
 
@@ -80,14 +82,14 @@ header button.high-contrast{
 }
 
 .high-contrast h1{
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .high-contrast a {
-  color: var(--text-accent);
+  color: var(--hyperlinks);
 }
 .high-contrast h4{
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .high-contrast button:hover{
@@ -100,10 +102,20 @@ header button.high-contrast{
   border: 1px solid var(--border-color);
 }
 
+.high-contrast #depoimento div{
+  font-size: 1.2em;
+}
+
+
+
 #projeto {
   border: 1px solid var(--border-color);
   
 }
 #projeto p{
   color: black;
+}
+
+.high-contrast #projeto{
+  font-size: 13em;
 }
