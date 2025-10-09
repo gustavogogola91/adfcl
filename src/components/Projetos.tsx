@@ -70,7 +70,7 @@ export default function Projetos() {
   const itemsVisiveis = isMobile ? 1 : 3;
   const limiteCarrossel = projetos.length - itemsVisiveis;
   const translateXValue = current * (100 / itemsVisiveis);
-  
+
   const prev = () =>
     setCurrent((current) => (current === 0 ? limiteCarrossel : current - 1));
 
@@ -92,43 +92,49 @@ export default function Projetos() {
           style={{ transform: `translateX(-${translateXValue}%)` }}
         >
           {projetos.map((projeto) => (
-            <div className="flex-shrink-0 w-full md:w-1/3 p-2 md:p-3 min-h-[350px]" key={projeto.id}>
-              <div
-              className="flex flex-col shadow-lg items-center hover:scale-105 duration-200 bg-dark-green h-full"
-              id="projeto"
+            <div
+              className="flex-shrink-0 w-full md:w-1/3 p-2 md:p-3 min-h-[350px]"
+              key={projeto.id}
             >
-              <img
-                src={projeto.imagem}
-                alt={projeto.titulo}
-                className={`w-full object-cover h-[280px] object-${projeto.imageSpotlight}`}
-              />
-              <div className="p-4">
-                <h4 className="text-[24px] text-white font-bold mb-4">
-                  {projeto.titulo}
-                </h4>
-                <p className="text-sm text-justify text-white">
-                  {projeto.descricao}
-                </p>
+              <div
+                className="flex flex-col shadow-lg items-center hover:scale-105 duration-200 bg-dark-green h-full"
+                id="projeto"
+              >
+                <img
+                  src={projeto.imagem}
+                  alt={projeto.titulo}
+                  className={`w-full object-cover h-[280px] object-${projeto.imageSpotlight}`}
+                />
+                <div className="p-4">
+                  <h4 className="text-[24px] text-white font-bold mb-4">
+                    {projeto.titulo}
+                  </h4>
+                  <p className="text-sm text-justify text-white">
+                    {projeto.descricao}
+                  </p>
+                </div>
               </div>
             </div>
-            </div>
-            
           ))}
         </div>
-        <div className="absolute inset-0 flex items-center justify-between p-8 w-full">
-          <button
-            onClick={prev}
-            className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-          >
-            <ChevronLeft size={40} />
-          </button>
-          <button
-            onClick={next}
-            className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-          >
-            <ChevronRight size={40} />
-          </button>
-        </div>
+        {projetos.length > itemsVisiveis ? (
+          <div className="absolute inset-0 flex items-center justify-between p-8 w-full">
+            <button
+              onClick={prev}
+              className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+            >
+              <ChevronLeft size={40} />
+            </button>
+            <button
+              onClick={next}
+              className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+            >
+              <ChevronRight size={40} />
+            </button>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </section>
   );
