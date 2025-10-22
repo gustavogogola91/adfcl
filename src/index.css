@@ -106,14 +106,8 @@ header button.high-contrast{
   font-size: 1.2em;
 }
 
-
-
 #projeto {
   border: 1px solid var(--border-color);
-  
-}
-#projeto p{
-  color: black;
 }
 
 .high-contrast #projeto{
