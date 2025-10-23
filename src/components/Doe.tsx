@@ -9,7 +9,7 @@ export default function Doe() {
 
         <div className="flex flex-col gap-4 mt-4">
           <img src={qrcode} alt="Qrcode" className="w-48 m-auto rounded-md shadow-md" />
-          <p className="text-white">Chave pix: 00.000.000/0000-00</p>
+          <p className="text-white">Chave pix: 07.465.975/0001-34</p>
         </div>
       </div>
 
