@@ -93,6 +93,7 @@ export default function Header() {
           <button onClick={() => scrollToSection("depoimentos")}>Depoimentos</button>
           <button onClick={() => scrollToSection("projetos")}>Projetos</button>
           <button onClick={() => scrollToSection("contato")}>Contato</button>
+          <button onClick={() => scrollToSection("doe")}>Doe</button>
         </div>
       </div>
 
@@ -117,6 +118,10 @@ export default function Header() {
           >
             Contato
           </button>
+          <button
+            className="p-3 hover:bg-[#3d5f4a] text-white md:text-black"
+            onClick={() => scrollToSection("doe")}
+            ></button>
         </div>
       )}
 

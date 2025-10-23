@@ -2,6 +2,7 @@ import imgFachada from "/Fachada.jpeg";
 import Depoimentos from "./Depoimentos";
 import Contato from "./Contato";
 import Projetos from "./Projetos";
+import Doe from "./Doe";
 
 export default function Home() {
   return (
@@ -26,13 +27,13 @@ export default function Home() {
             {/* Texto sobreposto */}
             <div className="absolute inset-0 flex flex-col justify-center items-center px-6 text-center z-10">
               <h1 className="font-bold uppercase text-[28px] text-white drop-shadow-lg mb-4">
-                Bem-vindo ao nosso site!
+                Bem-vindo a Associação!
               </h1>
               <p className="text-white text-sm leading-relaxed drop-shadow-md max-w-[90%]">
-                Aqui você encontrará espaço para explorar conteúdos, ideias e
-                novidades. Este é apenas um texto de demonstração para testar o
-                estilo, o layout e as fontes da página. Sinta-se à vontade para
-                navegar, ajustar e experimentar.
+                Bem-vindo à nossa história de superação e solidariedade!
+                Desde 2005, um grupo de pessoas com deficiência física e voluntários se uniu com um propósito: promover igualdade, dignidade e qualidade de vida.
+                Com muito esforço e amor, nossa Associação cresceu, acolheu centenas de pessoas e construiu com a ajuda de muitos corações a sede que hoje é símbolo de luta e esperança.
+                Seguimos firmes, espalhando empatia, apoio e inspiração para todos que acreditam.
               </p>
             </div>
           </div>
@@ -40,13 +41,13 @@ export default function Home() {
           {/* DESKTOP: Layout lado a lado original */}
           <div className="hidden md:flex flex-col justify-center items-center px-8 text-center md:text-left md:w-1/2">
             <h1 className="font-bold uppercase text-[48px] text-white">
-              Bem-vindo ao nosso site!
+              Bem-vindo a Associação!
             </h1>
             <p className="w-full md:w-3/4 text-white text-center md:text-justify mt-4">
-              Aqui você encontrará espaço para explorar conteúdos, ideias e
-              novidades. Este é apenas um texto de demonstração para testar o
-              estilo, o layout e as fontes da página. Sinta-se à vontade para
-              navegar, ajustar e experimentar.
+              Bem-vindo à nossa história de superação e solidariedade!
+              Desde 2005, um grupo de pessoas com deficiência física e voluntários se uniu com um propósito: promover igualdade, dignidade e qualidade de vida.
+              Com muito esforço e amor, nossa Associação cresceu, acolheu centenas de pessoas e construiu com a ajuda de muitos corações a sede que hoje é símbolo de luta e esperança.
+              Seguimos firmes, espalhando empatia, apoio e inspiração para todos que acreditam.
             </p>
           </div>
           <img
@@ -66,6 +67,9 @@ export default function Home() {
           </div>
           <div id="contato">
             <Contato />
+          </div>
+          <div id="doe">
+            <Doe />
           </div>
         </main>
       </div>

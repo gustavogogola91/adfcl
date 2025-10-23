@@ -4,6 +4,7 @@ import Header from './components/ui/Header';
 import Home from './components/Home';
 import { ThemeProvider } from './hooks/useTheme';
 import Projetos from './components/Projetos';
+import Doe from './components/Doe';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/contato" element={<Contato />} />
                 <Route path="/projetos" element={<Projetos />} />
+                <Route path="/doe" element={<Doe />} />
               </Routes>
             </main>
         </Router>
