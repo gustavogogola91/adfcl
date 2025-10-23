@@ -13,13 +13,13 @@ export default function Doe() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 mt-8">
+      <div className="flex mt-10 flex-col gap-8">
         <h3>
           Também é possível nos auxiliar doando seu comprovante fiscal por meio
           do programa Nota Paraná.
         </h3>
 
-        <h3 className="text-2xl text-[#4A755A] uppercase">
+        <h3 className="text-2xl font-bold text-[#4A755A] uppercase">
           Como Doar sua nota fiscal?
         </h3>
         <p>Assista o vídeo abaixo e descubra como fazer sua doação.</p>

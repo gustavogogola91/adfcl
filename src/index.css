@@ -16,18 +16,6 @@
 
 }
 
-.high-contrast {
-  --bg-primary: #111111;
-  --bg-secondary: #404040;
-  --gray: #A6A6A6;
-  --hyperlinks: #75E9FC;
-  --text-primary: #ffffff;
-  --text-secondary: #ffff00;
-  --text-accent: #ffff00;
-  --border-color: #ffffff;
-  --light-green: #ffff00;
-}
-
 @theme inline {
   --color-light-green: var(--light-green);
   --color-dark-green: var(--dark-green);
@@ -65,51 +53,11 @@ header button:hover{
   color:var(--light-green)
 }
 
-header button.high-contrast{
-  background-color: green;
-}
-
-.high-contrast {
-  color-scheme: only light;
-}
-
-.high-contrast * {
-  border-color: var(--border-color) !important;
-}
-
-.high-contrast img {
-  filter: contrast(1.2) brightness(1.1);
-}
-
-.high-contrast h1{
-  color: var(--text-primary);
-}
-
-.high-contrast a {
-  color: var(--hyperlinks);
-}
-.high-contrast h4{
-  color: var(--text-primary);
-}
-
-.high-contrast button:hover{
-  background-color: yellow;
-  color: black;
-}
-
 #depoimento {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
 }
 
-.high-contrast #depoimento div{
-  font-size: 1.2em;
-}
-
 #projeto {
   border: 1px solid var(--border-color);
-}
-
-.high-contrast #projeto{
-  font-size: 13em;
 }

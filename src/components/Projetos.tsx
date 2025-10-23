@@ -76,13 +76,13 @@ export default function Projetos() {
       <h2 className="font-bold uppercase text-2xl text-[#4A755A] text-center">
         Nossos projetos
       </h2>
-      <h3 className="text-center mt-4">
+      <h3 className="text-center">
         Conheça alguns projetos que já realizamos
       </h3>
 
       <div className="relative overflow-hidden">
         <div
-          className="flex mt-6 transition-transform ease-out duration-500"
+          className="flex mt-3 transition-transform ease-out duration-500"
           style={{ transform: `translateX(-${translateXValue}%)` }}
         >
           {projetos.map((projeto) => (

@@ -23,17 +23,25 @@ export default function Home() {
             />
             {/* Overlay escuro para melhorar legibilidade */}
             <div className="absolute inset-0 bg-black/70"></div>
-            
+
             {/* Texto sobreposto */}
             <div className="absolute inset-0 flex flex-col justify-center items-center px-6 text-center z-10">
               <h1 className="font-bold uppercase text-[28px] text-white drop-shadow-lg mb-4">
                 Bem-vindo a Associação!
               </h1>
               <p className="text-white text-sm leading-relaxed drop-shadow-md max-w-[90%]">
-                Bem-vindo à nossa história de superação e solidariedade!
-                Desde 2005, um grupo de pessoas com deficiência física e voluntários se uniu com um propósito: promover igualdade, dignidade e qualidade de vida.
-                Com muito esforço e amor, nossa Associação cresceu, acolheu centenas de pessoas e construiu com a ajuda de muitos corações a sede que hoje é símbolo de luta e esperança.
-                Seguimos firmes, espalhando empatia, apoio e inspiração para todos que acreditam.
+                Conheça a nossa história de superação e solidariedade!
+              </p>
+              <br />
+              <p className="text-white text-sm leading-relaxed drop-shadow-md max-w-[90%]">
+                Desde 2005, unimos pessoas com deficiência e voluntários para
+                promover igualdade, dignidade e qualidade de vida. Com esforço e
+                amor, crescemos, acolhemos centenas de pessoas e construímos
+                nossa sede — símbolo de luta e esperança.
+              </p>
+              <br />
+              <p className="text-white text-sm leading-relaxed drop-shadow-md max-w-[90%]">
+                Seguimos firmes, espalhando empatia e inspiração.
               </p>
             </div>
           </div>
@@ -44,10 +52,16 @@ export default function Home() {
               Bem-vindo a Associação!
             </h1>
             <p className="w-full md:w-3/4 text-white text-center md:text-justify mt-4">
-              Bem-vindo à nossa história de superação e solidariedade!
-              Desde 2005, um grupo de pessoas com deficiência física e voluntários se uniu com um propósito: promover igualdade, dignidade e qualidade de vida.
-              Com muito esforço e amor, nossa Associação cresceu, acolheu centenas de pessoas e construiu com a ajuda de muitos corações a sede que hoje é símbolo de luta e esperança.
-              Seguimos firmes, espalhando empatia, apoio e inspiração para todos que acreditam.
+              Conheça a nossa história de superação e solidariedade!
+            </p>
+            <p className="w-full md:w-3/4 text-white text-center md:text-justify mt-4">
+              Desde 2005, unimos pessoas com deficiência e voluntários para
+              promover igualdade, dignidade e qualidade de vida. Com esforço e
+              amor, crescemos, acolhemos centenas de pessoas e construímos nossa
+              sede — símbolo de luta e esperança.
+            </p>
+            <p className="w-full md:w-3/4 font-bold text-white text-center md:text-justify mt-4">
+              Seguimos firmes, espalhando empatia e inspiração.
             </p>
           </div>
           <img

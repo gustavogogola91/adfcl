@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/ADFCL-Logo.jpg";
-import { ThemeToggle } from "./ThemeToggle";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,10 +75,6 @@ export default function Header() {
               Associação de Deficientes Físicos de Campo Largo
             </p>
           </div>
-        </div>
-
-        <div className="md:block">
-          <ThemeToggle />
         </div>
 
         <button

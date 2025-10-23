@@ -1,14 +1,14 @@
 export default function Contato() {
   return (
-    <section className="w-[80%] md:w-[90%] flex flex-col gap-4 m-auto text-center mt-4">
-      <h2 className="text-2xl text-[#4A755A] uppercase">Nossas redes sociais</h2>
+    <section className="w-[80%] md:w-[90%] flex flex-col gap-4 m-auto text-center my-20">
+      <h2 className=" font-bold uppercase text-2xl text-[#4A755A] text-center ">Nossas redes sociais</h2>
       <h3>Entre em contato conosco</h3>
       <ul className="flex flex-col lg:flex-row w-full gap-8 justify-center items-center">
         <li className="w-fit">
           <a
             href="https://www.instagram.com/adfcl_2005/"
             target="_blank"
-            className="flex flex-row gap-4 items-center w-fit border-2 p-4 text-white bg-dark-green rounded-[5px] hover:bg-[#3d5f4a]"
+            className="flex flex-row gap-4 items-center w-fit border-2 px-4 py-2 text-white bg-dark-green text-1xl font-bold rounded-[5px] transition hover:bg-[#3d5f4a]"
           >
             <img src="src\assets\Icons\instagram.png" alt="Logo Instagram" className="w-10" />{" "}
             Instagram
@@ -18,7 +18,7 @@ export default function Contato() {
           <a
             href="https://www.facebook.com/adfclcampolargo/"
             target="_blank"
-            className="flex flex-row gap-4 items-center w-fit border-2 p-4 text-white bg-dark-green rounded-[5px] hover:bg-[#3d5f4a]"
+            className="flex flex-row gap-4 items-center w-fit border-2 px-4 py-2 text-white bg-dark-green rounded-[5px] text-1xl font-bold transition hover:bg-[#3d5f4a]"
           >
             <img src="src\assets\Icons\facebook.png" alt="Logo Facebook" className="w-10" />{" "}
             Facebook
