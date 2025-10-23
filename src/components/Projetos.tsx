@@ -1,6 +1,8 @@
 import projetoEsporte from "../assets/projetos/projetoEsportivo.avif";
 import projetoEquoterapia from "../assets/projetos/projetoEquoterapia.avif";
 import projetoBaile from "../assets/projetos/projetoBaile.avif";
+import projetoFisioterapia from "../assets/projetos/projeto-fisioterapia.png";
+import projetoMusica from "../assets/projetos/projeto-musica.png";
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -31,26 +33,18 @@ export default function Projetos() {
     },
     {
       id: 4,
-      titulo: "Projeto Esportivo",
-      descricao:
-        "Iniciativa voltada para incentivar a prática do esporte entre os jovens.",
-      imagem: projetoEsporte,
+      titulo: "Fisioterapia",
+      descricao: "Atividades de reabilitação e fortalecimento físico, promovendo bem estar e autonomia a nossos associados",
+      imagem: projetoFisioterapia,
       imageSpotlight: "center",
     },
     {
       id: 5,
-      titulo: "Equoterapia",
+      titulo: "Projeto de Música",
       descricao:
-        "Recurso terapêutico que utiliza o cavalo dentro de uma abordagem interdisciplinar nas áres da saúde, educação e equitação.",
-      imagem: projetoEquoterapia,
+        "Aulas de música e instrumentos, estimulando a expressão artística e o desenvolvimento cognitivo.",
+      imagem: projetoMusica,
       imageSpotlight: "top",
-    },
-    {
-      id: 6,
-      titulo: "Eventos e Bailes",
-      descricao: "Tardes de dança e muita alegria!!!",
-      imagem: projetoBaile,
-      imageSpotlight: "center",
     },
   ];
 
