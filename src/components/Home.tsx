@@ -2,6 +2,7 @@ import imgFachada from "/Fachada.jpeg";
 import Depoimentos from "./Depoimentos";
 import Contato from "./Contato";
 import Projetos from "./Projetos";
+import Doe from "./Doe";
 
 export default function Home() {
   return (
@@ -66,6 +67,9 @@ export default function Home() {
           </div>
           <div id="contato">
             <Contato />
+          </div>
+          <div id="doe">
+            <Doe />
           </div>
         </main>
       </div>

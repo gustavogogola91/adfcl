@@ -4,7 +4,7 @@ export default function Doe() {
   return (
     <section className="w-[90%] md:w-[50%] flex flex-col gap-2 m-auto text-center mt-4">
       <div className="bg-dark-green p-4 rounded-lg">
-        <h2 className="text-2xl text-white uppercase font-bold">Doe</h2>
+        <h2 className="text-2xl text-white uppercase font-bold">Deixe o seu apoio!</h2>
         <h3 className="text-white">Nos auxilie em nossa missão</h3>
 
         <div className="flex flex-col gap-4 mt-4">
