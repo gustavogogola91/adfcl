@@ -5,12 +5,12 @@ export default function Depoimentos() {
   const depoimentos = [
     {
       id: 1,
-      titulo: "titulo",
+      titulo: "",
       depoimento:
-        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
+        "Faz seis meses que frequento a associação, e foi uma das melhores decisões que tomei. Fui recebido com carinho e respeito em um ambiente leve e acolhedor. Aprendi xadrez, estou tendo aulas de violão e cada encontro é uma troca de aprendizado e empatia — somos como irmãos de dor, unidos por histórias e superação. A direção é atenciosa e faz todos se sentirem parte de algo maior. Esse espaço se tornou meu refúgio, um lugar de afeto, respeito e amizade.",
       foto: "src/assets/icons/perfil.png",
-      name: "Nome",
-      idade: "Idade",
+      name: "Xavier",
+      idade: "35",
     },
     {
       id: 2,
@@ -105,7 +105,7 @@ export default function Depoimentos() {
               >
                 <div className="font-bold italic">{depoimento.titulo}</div>
                 <div className="italic mt-8 text-[0.8rem] break-words highcontrast:text-xl">
-                  {depoimento.depoimento}
+                  "{depoimento.depoimento}"
                 </div>
                 <div className="flex flex-row w-full p-1 justify-around mt-8 bottom-0">
                   <div>
