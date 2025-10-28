@@ -5,58 +5,20 @@ export default function Depoimentos() {
   const depoimentos = [
     {
       id: 1,
-      titulo: "",
       depoimento:
         "Faz seis meses que frequento a associação, e foi uma das melhores decisões que tomei. Fui recebido com carinho e respeito em um ambiente leve e acolhedor. Aprendi xadrez, estou tendo aulas de violão e cada encontro é uma troca de aprendizado e empatia — somos como irmãos de dor, unidos por histórias e superação. A direção é atenciosa e faz todos se sentirem parte de algo maior. Esse espaço se tornou meu refúgio, um lugar de afeto, respeito e amizade.",
-      foto: "src/assets/icons/perfil.png",
-      name: "Xavier",
-      idade: "35",
+      foto: "src/assets/icons/israelXavier.jpeg",
+      nome: "Israel Xavier",
+      idade: "47",
     },
     {
       id: 2,
-      titulo: "titulo",
       depoimento:
-        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
-      foto: "src/assets/icons/perfil.png",
-      nome: "Nome",
-      idade: "Idade",
-    },
-    {
-      id: 3,
-      titulo: "titulo",
-      depoimento:
-        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
-      foto: "src/assets/icons/perfil.png",
-      name: "Nome",
-      idade: "Idade",
-    },
-    {
-      id: 4,
-      titulo: "titulo",
-      depoimento:
-        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
-      foto: "src/assets/icons/perfil.png",
-      name: "Nome",
-      idade: "Idade",
-    },
-    {
-      id: 5,
-      titulo: "titulo",
-      depoimento:
-        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
-      foto: "src/assets/icons/perfil.png",
-      nome: "Nome",
-      idade: "Idade",
-    },
-    {
-      id: 6,
-      titulo: "titulo",
-      depoimento:
-        "DescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricaoDescricao",
-      foto: "src/assets/icons/perfil.png",
-      name: "Nome",
-      idade: "Idade",
-    },
+        "Participo da associação há quatro anos, e minha vida mudou muito desde então. Sou atleta de bocha e participo das atividades de fisioterapia, equoterapia e música. Estar com outras pessoas é especial — trocamos histórias e criamos amizades verdadeiras. A equipe é carinhosa e acolhedora, e até as refeições refletem esse cuidado. Sou muito grato à associação por tudo o que representa na minha vida.",
+      foto: "src/assets/icons/alcidesMiguel.jpeg",
+      nome: "Alcides Miguel",
+      idade: "55",
+    }
   ];
 
   const [current, setCurrent] = useState(0);
@@ -99,25 +61,27 @@ export default function Depoimentos() {
           >
             {depoimentos.map((depoimento) => (
               <div
-                className="bg-[#f3f1f1] shadow-lg flex-shrink-0 w-full md:w-1/3 p-2 md:p-3 flex flex-col min-h-[450px] gap-8"
+                className={`bg-[#f3f1f1] shadow-lg flex-shrink-0 w-full  p-2 md:p-3 flex flex-col min-h-[450px] sm:gap-1 
+                  ${ depoimentos.length <= 2 ? "md:w-1/2"  : "md:w-1/3 " }
+                  `}
+                
                 key={depoimento.id}
                 id="depoimento"
               >
-                <div className="font-bold italic">{depoimento.titulo}</div>
-                <div className="italic mt-8 text-[0.8rem] break-words highcontrast:text-xl">
-                  "{depoimento.depoimento}"
+                <div className="italic mt-4 text-[1rem] break-words highcontrast:text-xl">
+                "{depoimento.depoimento}"
                 </div>
                 <div className="flex flex-row w-full p-1 justify-around mt-8 bottom-0">
-                  <div>
+                  <div className="">
                     <img
                       src={depoimento.foto}
                       alt="foto"
-                      className="w-[32px] rounded-full"
+                      className="w-[55px] h-[55px] rounded-full object-cover"
                     />
                   </div>
                   <div>
-                    <div className="font-semibold">{depoimento.nome}</div>
-                    <div className="text-[0.8rem]">{depoimento.idade}</div>
+                    <div className="font-semibold text-[1.2rem] text-[#4a755a]">{depoimento.nome}</div>
+                    <div className="text-[0.8rem] text-center">{depoimento.idade}</div>
                   </div>
                 </div>
               </div>
