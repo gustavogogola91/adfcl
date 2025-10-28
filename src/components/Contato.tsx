@@ -1,3 +1,6 @@
+import logoInstagram from "../assets/icons/instagram.png"
+import logoFacebook from "../assets/icons/facebook.png"
+
 export default function Contato() {
   return (
     <section className="w-[80%] md:w-[90%] flex flex-col gap-4 m-auto text-center my-20">
@@ -10,7 +13,7 @@ export default function Contato() {
             target="_blank"
             className="flex flex-row gap-4 items-center w-fit border-2 px-4 py-2 text-white bg-dark-green text-1xl font-bold rounded-[5px] transition hover:bg-[#3d5f4a]"
           >
-            <img src="src\assets\Icons\instagram.png" alt="Logo Instagram" className="w-10" />{" "}
+            <img src={logoInstagram} alt="Logo Instagram" className="w-10" />{" "}
             Instagram
           </a>
         </li>
@@ -20,7 +23,7 @@ export default function Contato() {
             target="_blank"
             className="flex flex-row gap-4 items-center w-fit border-2 px-4 py-2 text-white bg-dark-green rounded-[5px] text-1xl font-bold transition hover:bg-[#3d5f4a]"
           >
-            <img src="src\assets\Icons\facebook.png" alt="Logo Facebook" className="w-10" />{" "}
+            <img src={logoFacebook} alt="Logo Facebook" className="w-10" />{" "}
             Facebook
           </a>
         </li>

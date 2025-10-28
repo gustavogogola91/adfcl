@@ -1,3 +1,5 @@
+import israelXavier from "../assets/Icons/israelXavier.jpeg"
+import alcidesMiguel from "../assets/Icons/alcidesMiguel.jpeg"
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -7,17 +9,17 @@ export default function Depoimentos() {
       id: 1,
       depoimento:
         "Faz seis meses que frequento a associação, e foi uma das melhores decisões que tomei. Fui recebido com carinho e respeito em um ambiente leve e acolhedor. Aprendi xadrez, estou tendo aulas de violão e cada encontro é uma troca de aprendizado e empatia — somos como irmãos de dor, unidos por histórias e superação. A direção é atenciosa e faz todos se sentirem parte de algo maior. Esse espaço se tornou meu refúgio, um lugar de afeto, respeito e amizade.",
-      foto: "src/assets/icons/israelXavier.jpeg",
+      foto: israelXavier,
       nome: "Israel Xavier",
-      idade: "47",
+      idade: "47 anos",
     },
     {
       id: 2,
       depoimento:
         "Participo da associação há quatro anos, e minha vida mudou muito desde então. Sou atleta de bocha e participo das atividades de fisioterapia, equoterapia e música. Estar com outras pessoas é especial — trocamos histórias e criamos amizades verdadeiras. A equipe é carinhosa e acolhedora, e até as refeições refletem esse cuidado. Sou muito grato à associação por tudo o que representa na minha vida.",
-      foto: "src/assets/icons/alcidesMiguel.jpeg",
+      foto: alcidesMiguel,
       nome: "Alcides Miguel",
-      idade: "55",
+      idade: "55 anos",
     }
   ];
 
