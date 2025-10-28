@@ -1,5 +1,5 @@
 import instagram from "../assets/Icons/instagram.png"
-import facebook from "../assets/icons/facebook.png"
+import facebook from "../assets/Icons/facebook.png"
 
 export default function Contato() {
   return (
