@@ -1,5 +1,5 @@
-import israelXavier from "../assets/Icons/israelXavier.jpeg"
-import alcidesMiguel from "../assets/Icons/alcidesMiguel.jpeg"
+import israelXavier from "../assets/Icons/israelXavier.jpeg";
+import alcidesMiguel from "../assets/Icons/alcidesMiguel.jpeg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -20,7 +20,7 @@ export default function Depoimentos() {
       foto: alcidesMiguel,
       nome: "Alcides Miguel",
       idade: "55 anos",
-    }
+    },
   ];
 
   const [current, setCurrent] = useState(0);
@@ -29,6 +29,7 @@ export default function Depoimentos() {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
+      setCurrent(0);
     };
     window.addEventListener("resize", handleResize);
     return () => {
@@ -47,7 +48,7 @@ export default function Depoimentos() {
     setCurrent((current) => (current === limiteCarrossel ? 0 : current + 1));
 
   return (
-    <section className="w-[80%] mt-8 m-auto">
+    <section className="w-[90%] mt-8 m-auto">
       <h2 className="font-bold uppercase text-2xl text-[#4A755A] text-center ">
         Depoimentos
       </h2>
@@ -55,59 +56,64 @@ export default function Depoimentos() {
       <h3 className="text-center mt-4">
         Descubra como ajudamos pessoas a melhorar sua vida
       </h3>
-      <div className="relative">
-        <div className="relative overflow-hidden">
-          <div
-            className="flex mt-6 transition-transform ease-out duration-500"
-            style={{ transform: `translateX(-${translateXValue}%)` }}
-          >
-            {depoimentos.map((depoimento) => (
-              <div
-                className={`bg-[#f3f1f1] shadow-lg flex-shrink-0 w-full  p-2 md:p-3 flex flex-col min-h-[450px] sm:gap-1 
-                  ${ depoimentos.length <= 2 ? "md:w-1/2"  : "md:w-1/3 " }
+      <div>
+        <div>
+          <div className="relative overflow-hidden">
+            <div
+              className="flex mt-6 transition-transform ease-out duration-500"
+              style={{ transform: `translateX(-${translateXValue}%)` }}
+            >
+              {depoimentos.map((depoimento) => (
+                <div
+                  className={`bg-[#f3f1f1] shadow-lg flex-shrink-0 w-full  p-2 md:p-3 flex flex-col min-h-[450px] sm:gap-1 
+                  ${depoimentos.length <= 2 ? "md:w-1/2" : "md:w-1/3 "}
                   `}
-                
-                key={depoimento.id}
-                id="depoimento"
-              >
-                <div className="italic mt-4 text-[1rem] break-words highcontrast:text-xl">
-                "{depoimento.depoimento}"
-                </div>
-                <div className="flex flex-row w-full p-1 justify-around mt-8 bottom-0">
-                  <div className="">
-                    <img
-                      src={depoimento.foto}
-                      alt="foto"
-                      className="w-[55px] h-[55px] rounded-full object-cover"
-                    />
+                  key={depoimento.id}
+                  id="depoimento"
+                >
+                  <div className="italic mt-4 text-[1rem] break-words highcontrast:text-xl">
+                    "{depoimento.depoimento}"
                   </div>
-                  <div>
-                    <div className="font-semibold text-[1.2rem] text-[#4a755a]">{depoimento.nome}</div>
-                    <div className="text-[0.8rem] text-center">{depoimento.idade}</div>
+                  <div className="flex flex-row w-full p-1 justify-around mt-8 bottom-0">
+                    <div className="">
+                      <img
+                        src={depoimento.foto}
+                        alt="foto"
+                        className="w-[55px] h-[55px] rounded-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-[1.2rem] text-[#4a755a]">
+                        {depoimento.nome}
+                      </div>
+                      <div className="text-[0.8rem] text-center">
+                        {depoimento.idade}
+                      </div>
+                    </div>
                   </div>
                 </div>
+              ))}
+            </div>
+            {depoimentos.length > itemsVisiveis ? (
+              <div className="absolute inset-0 flex items-center justify-between p-8">
+                <button
+                  onClick={prev}
+                  className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+                >
+                  <ChevronLeft size={40} />
+                </button>
+                <button
+                  onClick={next}
+                  className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+                >
+                  <ChevronRight size={40} />
+                </button>
               </div>
-            ))}
+            ) : (
+              <></>
+            )}
           </div>
         </div>
-        {depoimentos.length > itemsVisiveis ? (
-          <div className="absolute inset-0 flex items-center justify-between p-8">
-            <button
-              onClick={prev}
-              className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-            >
-              <ChevronLeft size={40} />
-            </button>
-            <button
-              onClick={next}
-              className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-            >
-              <ChevronRight size={40} />
-            </button>
-          </div>
-        ) : (
-          <></>
-        )}
       </div>
     </section>
   );
